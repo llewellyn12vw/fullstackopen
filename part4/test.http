@@ -1,0 +1,66 @@
+POST http://localhost:3003/api/users
+content-type: application/json
+
+{
+    "username": "llewellyn",
+    "name": "lew666",
+    "password": "jjjj"
+}
+
+# {
+#     "username": "llew",
+#     "name": "666",
+#     "password": "1234"
+# }
+
+
+
+###
+
+POST http://localhost:3003/api/blogs
+content-type: application/json
+
+{
+    "title": "daaar",
+    "author": "val",
+    "url": "www.66666666",
+    "likes": 7,
+    "userId": "6347c3da145308493e2bc4c4"
+}
+
+###
+
+GET http://localhost:3003/api/blogs
+
+
+###
+
+GET http://localhost:3003/api/users
+
+###
+
+POST http://localhost:3003/api/login
+content-type: application/json
+
+{
+    "username": "llewellyn",
+    "password": "jjjj"
+}
+
+### llewellyn: 6347e10fa0a4183cad77c17c
+### llew: 6347db16c578293b612d5c92
+
+### deleting {fokkity fok} belonging to llewellyn: 6347e81d9a24224a1eb5a5dd
+
+###
+
+POST http://localhost:3003/api/blogs
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxsZXciLCJpZCI6IjYzNDdkYjE2YzU3ODI5M2I2MTJkNWM5MiIsImlhdCI6MTY2NTY1NDMxMH0.2pfipyPYqMmJ4wRII-K_3EuJoZAQrcKNx7Sq349ZfYs
+
+{
+    "title": "daaar",
+    "author": "val",
+    "url": "www.66666666",
+    "likes": 7,
+}
